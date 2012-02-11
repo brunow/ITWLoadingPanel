@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7208D2B14E6D7C6003F95AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7208D2A14E6D7C6003F95AB /* UIKit.framework */; };
+		E7208D2D14E6D7C6003F95AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7208D2C14E6D7C6003F95AB /* Foundation.framework */; };
+		E7208D2F14E6D7C6003F95AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7208D2E14E6D7C6003F95AB /* CoreGraphics.framework */; };
+		E7208D3514E6D7C6003F95AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7208D3314E6D7C6003F95AB /* InfoPlist.strings */; };
+		E7208D3714E6D7C6003F95AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208D3614E6D7C6003F95AB /* main.m */; };
+		E7208D3B14E6D7C6003F95AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208D3A14E6D7C6003F95AB /* AppDelegate.m */; };
+		E7208D3E14E6D7C6003F95AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208D3D14E6D7C6003F95AB /* ViewController.m */; };
+		E7208D4114E6D7C6003F95AB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208D3F14E6D7C6003F95AB /* ViewController.xib */; };
+		E7208D4B14E6D833003F95AB /* ITWLoadingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208D4914E6D833003F95AB /* ITWLoadingPanel.m */; };
+		E7208D4C14E6D833003F95AB /* ITWLoadingPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208D4A14E6D833003F95AB /* ITWLoadingPanel.xib */; };
+		E7208D4E14E6D991003F95AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7208D4D14E6D991003F95AB /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E7208D2614E6D7C6003F95AB /* ITWLoadingPanelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITWLoadingPanelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7208D2A14E6D7C6003F95AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7208D2C14E6D7C6003F95AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7208D2E14E6D7C6003F95AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7208D3214E6D7C6003F95AB /* ITWLoadingPanelExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITWLoadingPanelExample-Info.plist"; sourceTree = "<group>"; };
+		E7208D3414E6D7C6003F95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7208D3614E6D7C6003F95AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7208D3814E6D7C6003F95AB /* ITWLoadingPanelExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ITWLoadingPanelExample-Prefix.pch"; sourceTree = "<group>"; };
+		E7208D3914E6D7C6003F95AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7208D3A14E6D7C6003F95AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7208D3C14E6D7C6003F95AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E7208D3D14E6D7C6003F95AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E7208D4014E6D7C6003F95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E7208D4814E6D833003F95AB /* ITWLoadingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITWLoadingPanel.h; sourceTree = "<group>"; };
+		E7208D4914E6D833003F95AB /* ITWLoadingPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITWLoadingPanel.m; sourceTree = "<group>"; };
+		E7208D4A14E6D833003F95AB /* ITWLoadingPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITWLoadingPanel.xib; sourceTree = "<group>"; };
+		E7208D4D14E6D991003F95AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7208D2314E6D7C6003F95AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7208D4E14E6D991003F95AB /* QuartzCore.framework in Frameworks */,
+				E7208D2B14E6D7C6003F95AB /* UIKit.framework in Frameworks */,
+				E7208D2D14E6D7C6003F95AB /* Foundation.framework in Frameworks */,
+				E7208D2F14E6D7C6003F95AB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7208D1B14E6D7C6003F95AB = {
+			isa = PBXGroup;
+			children = (
+				E7208D4D14E6D991003F95AB /* QuartzCore.framework */,
+				E7208D4714E6D833003F95AB /* ITWLoadingPanel */,
+				E7208D3014E6D7C6003F95AB /* ITWLoadingPanelExample */,
+				E7208D2914E6D7C6003F95AB /* Frameworks */,
+				E7208D2714E6D7C6003F95AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7208D2714E6D7C6003F95AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7208D2614E6D7C6003F95AB /* ITWLoadingPanelExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7208D2914E6D7C6003F95AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7208D2A14E6D7C6003F95AB /* UIKit.framework */,
+				E7208D2C14E6D7C6003F95AB /* Foundation.framework */,
+				E7208D2E14E6D7C6003F95AB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7208D3014E6D7C6003F95AB /* ITWLoadingPanelExample */ = {
+			isa = PBXGroup;
+			children = (
+				E7208D3914E6D7C6003F95AB /* AppDelegate.h */,
+				E7208D3A14E6D7C6003F95AB /* AppDelegate.m */,
+				E7208D3C14E6D7C6003F95AB /* ViewController.h */,
+				E7208D3D14E6D7C6003F95AB /* ViewController.m */,
+				E7208D3F14E6D7C6003F95AB /* ViewController.xib */,
+				E7208D3114E6D7C6003F95AB /* Supporting Files */,
+			);
+			path = ITWLoadingPanelExample;
+			sourceTree = "<group>";
+		};
+		E7208D3114E6D7C6003F95AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7208D3214E6D7C6003F95AB /* ITWLoadingPanelExample-Info.plist */,
+				E7208D3314E6D7C6003F95AB /* InfoPlist.strings */,
+				E7208D3614E6D7C6003F95AB /* main.m */,
+				E7208D3814E6D7C6003F95AB /* ITWLoadingPanelExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7208D4714E6D833003F95AB /* ITWLoadingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				E7208D4814E6D833003F95AB /* ITWLoadingPanel.h */,
+				E7208D4914E6D833003F95AB /* ITWLoadingPanel.m */,
+				E7208D4A14E6D833003F95AB /* ITWLoadingPanel.xib */,
+			);
+			path = ITWLoadingPanel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7208D2514E6D7C6003F95AB /* ITWLoadingPanelExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7208D4414E6D7C6003F95AB /* Build configuration list for PBXNativeTarget "ITWLoadingPanelExample" */;
+			buildPhases = (
+				E7208D2214E6D7C6003F95AB /* Sources */,
+				E7208D2314E6D7C6003F95AB /* Frameworks */,
+				E7208D2414E6D7C6003F95AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITWLoadingPanelExample;
+			productName = ITWLoadingPanelExample;
+			productReference = E7208D2614E6D7C6003F95AB /* ITWLoadingPanelExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7208D1D14E6D7C6003F95AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E7208D2014E6D7C6003F95AB /* Build configuration list for PBXProject "ITWLoadingPanelExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7208D1B14E6D7C6003F95AB;
+			productRefGroup = E7208D2714E6D7C6003F95AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7208D2514E6D7C6003F95AB /* ITWLoadingPanelExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7208D2414E6D7C6003F95AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7208D3514E6D7C6003F95AB /* InfoPlist.strings in Resources */,
+				E7208D4114E6D7C6003F95AB /* ViewController.xib in Resources */,
+				E7208D4C14E6D833003F95AB /* ITWLoadingPanel.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7208D2214E6D7C6003F95AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7208D3714E6D7C6003F95AB /* main.m in Sources */,
+				E7208D3B14E6D7C6003F95AB /* AppDelegate.m in Sources */,
+				E7208D3E14E6D7C6003F95AB /* ViewController.m in Sources */,
+				E7208D4B14E6D833003F95AB /* ITWLoadingPanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7208D3314E6D7C6003F95AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7208D3414E6D7C6003F95AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7208D3F14E6D7C6003F95AB /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7208D4014E6D7C6003F95AB /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7208D4214E6D7C6003F95AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7208D4314E6D7C6003F95AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7208D4514E6D7C6003F95AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITWLoadingPanelExample/ITWLoadingPanelExample-Prefix.pch";
+				INFOPLIST_FILE = "ITWLoadingPanelExample/ITWLoadingPanelExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7208D4614E6D7C6003F95AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITWLoadingPanelExample/ITWLoadingPanelExample-Prefix.pch";
+				INFOPLIST_FILE = "ITWLoadingPanelExample/ITWLoadingPanelExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7208D2014E6D7C6003F95AB /* Build configuration list for PBXProject "ITWLoadingPanelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7208D4214E6D7C6003F95AB /* Debug */,
+				E7208D4314E6D7C6003F95AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7208D4414E6D7C6003F95AB /* Build configuration list for PBXNativeTarget "ITWLoadingPanelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7208D4514E6D7C6003F95AB /* Debug */,
+				E7208D4614E6D7C6003F95AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7208D1D14E6D7C6003F95AB /* Project object */;
+}
