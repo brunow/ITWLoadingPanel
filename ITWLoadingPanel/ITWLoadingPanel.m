@@ -216,7 +216,7 @@ static id _sharedObject = nil;
     CATransition *transition = [CATransition animation];
 	transition.duration = [self animationDuration];
 	transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-	transition.type = kCATransitionPush;	
+	transition.type = kCATransitionPush;
 	transition.subtype = kCATransitionFromTop;
 	[self.layer addAnimation:transition forKey:nil];
     self.frame = CGRectMake(0, -self.frame.size.height, self.frame.size.width, self.frame.size.height); 
