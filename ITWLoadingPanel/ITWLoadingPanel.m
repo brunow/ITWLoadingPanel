@@ -67,14 +67,18 @@ static id _sharedObject = nil;
     self.onCancelBlock = nil;
     self.onDisappearBlock = nil;
     
+#ifdef ILP_USE_ARC
+    // Do nothing
+#else
     [super dealloc];
+#endif
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 + (id)sharedInstance {
     if (_sharedObject == nil) {
-        _sharedObject = [[self panel] retain];
+        _sharedObject = ILP_RETAIN([self panel]);
     }
     
     return _sharedObject;
@@ -238,7 +242,7 @@ static id _sharedObject = nil;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)removePanelFromView {
     [self removeFromSuperview];
-    [_sharedObject release];
+    ILP_RELEASE(_sharedObject);
     _sharedObject = nil;
 }
 

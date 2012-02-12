@@ -17,16 +17,30 @@
 
 #import <UIKit/UIKit.h>
 
+#ifndef ILP_USE_ARC
+    #define ILP_USE_ARC __has_feature(objc_arc)
+#endif
+
+#if ILP_USE_ARC
+    #define ILP_RETAIN(xx)           xx
+    #define ILP_RELEASE(xx)
+    #define ILP_AUTORELEASE(xx)      xx
+#else
+    #define ILP_RETAIN(xx)           [xx retain];
+    #define ILP_RELEASE(xx)          [xx release];
+    #define ILP_AUTORELEASE(xx)      [xx autorelease];
+#endif
+
 typedef void(^ITWLoadingPanelBasicBlock)(void);
 
 @interface ITWLoadingPanel : UIView
 
-@property (nonatomic, retain) IBOutlet UIButton *cancelBtn;
-@property (nonatomic, retain) IBOutlet UIProgressView *progressView;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityView;
-@property (nonatomic, retain) IBOutlet UIImageView *successImageView;
-@property (nonatomic, retain) IBOutlet UILabel *cancelLabel;
-@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) IBOutlet UIButton *cancelBtn;
+@property (nonatomic, strong) IBOutlet UIProgressView *progressView;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityView;
+@property (nonatomic, strong) IBOutlet UIImageView *successImageView;
+@property (nonatomic, strong) IBOutlet UILabel *cancelLabel;
+@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (nonatomic, readonly) CFTimeInterval animationDuration;
 @property (nonatomic, copy) ITWLoadingPanelBasicBlock onDisappearBlock;
 @property (nonatomic, copy) ITWLoadingPanelBasicBlock onCancelBlock;
