@@ -52,10 +52,12 @@ static id _sharedObject = nil;
                 instantiateWithOwner:self options:nil] objectAtIndex:0];
     
     return panel;
-    
 }
 
 
+#ifdef ILP_USE_ARC
+    // Do nothing
+#else
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
     self.cancelBtn = nil;
@@ -66,13 +68,10 @@ static id _sharedObject = nil;
     self.titleLabel = nil;
     self.onCancelBlock = nil;
     self.onDisappearBlock = nil;
-    
-#ifdef ILP_USE_ARC
-    // Do nothing
-#else
+
     [super dealloc];
-#endif
 }
+#endif
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
