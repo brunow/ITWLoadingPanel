@@ -3,5 +3,9 @@ ITWLoadingPanel is a class for adding a download info panel, made at [Intotheweb
 
 ![Screenshot](https://github.com/brunow/ITWLoadingPanel/raw/master/Screenshot.png)
 
+## How to use it
+
+	[ITWLoadingPanel showPanelInView:self.view title:@"Title" cancelTitle:@"Cancel"];
+
 ## ARC
 ITWLoadingPanel is fully compatible out of box with arc and non-arc project.
