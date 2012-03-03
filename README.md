@@ -5,7 +5,7 @@ ITWLoadingPanel is a class for adding a download info panel, made at [Intotheweb
 
 ## Compatibility
 
-ITWLoadingPanel work on iPad and iPhone in any orientation.
+ITWLoadingPanel work with both iPad and iPhone in any orientation.
 
 ## How to use it
 
@@ -32,4 +32,4 @@ Subclass ITWLoadingPanel and do customization inside awakeFromNib:
 
 
 ## ARC
-ITWLoadingPanel is fully compatible out of box with arc and non-arc project.
+ITWLoadingPanel is fully compatible out of box with both ARC and non-ARC project.
