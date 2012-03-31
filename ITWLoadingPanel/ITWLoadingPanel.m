@@ -55,9 +55,7 @@ static id _sharedObject = nil;
 }
 
 
-#ifdef ILP_USE_ARC
-    // Do nothing
-#else
+#if !ILP_USE_ARC
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
     self.cancelBtn = nil;
