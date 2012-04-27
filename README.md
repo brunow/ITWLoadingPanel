@@ -7,6 +7,12 @@ ITWLoadingPanel is a class for adding a download info panel, made at [Intotheweb
 
 ITWLoadingPanel work with both iPad and iPhone in any orientation.
 
+## Installation
+
+Copy ITWLoadingPanel or install it with **cocoapods**
+
+	dependency 'ITWLoadingPanel', '~> 1.0.1'
+
 ## How to use it
 
 Show it:
